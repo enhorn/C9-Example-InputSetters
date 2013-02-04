@@ -21,21 +21,28 @@
 
 @implementation ViewController
 
+- (id) initWithCoder:(NSCoder *)aDecoder {
+	self = [super initWithCoder:aDecoder];
+	if (self) {
+		self.rows = @[
+			@"Date Collection - Date",
+			@"Date Collection - Time",
+			@"Date Collection - DateTime",
+			@"Date Selection - Date",
+			@"Date Selection - Time",
+			@"Date Selection - DateTime",
+			@"Date Selection - Count Down",
+			@"Multiple Choice",
+			@"Multiple Column Choice",
+			@"Multiple Selection",
+			@"Text Editor"
+		];
+	}
+	return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.rows = @[
-		@"Date Collection - Date",
-		@"Date Collection - Time",
-		@"Date Collection - DateTime",
-		@"Date Selection - Date",
-		@"Date Selection - Time",
-		@"Date Selection - DateTime",
-		@"Date Selection - Count Down",
-		@"Multiple Choice",
-		@"Multiple Column Choice",
-		@"Multiple Selection",
-		@"Text Editor"
-	];
 }
 
 - (void)didReceiveMemoryWarning {
