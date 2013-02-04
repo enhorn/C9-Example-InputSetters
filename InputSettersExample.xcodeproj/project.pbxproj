@@ -25,6 +25,8 @@
 		6B1C5C2C16BFF3470041561F /* MultiColumnChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C2316BFF3470041561F /* MultiColumnChoiceViewController.m */; };
 		6B1C5C2D16BFF3470041561F /* MultiSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C2516BFF3470041561F /* MultiSelectionViewController.m */; };
 		6B1C5C2E16BFF3470041561F /* TextEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C2716BFF3470041561F /* TextEditorViewController.m */; };
+		6B1C5C3116C0004A0041561F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C5C3016C0004A0041561F /* Icon.png */; };
+		6B1C5C3316C0004C0041561F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C5C3216C0004C0041561F /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		6B1C5C2616BFF3470041561F /* TextEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditorViewController.h; sourceTree = "<group>"; };
 		6B1C5C2716BFF3470041561F /* TextEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditorViewController.m; sourceTree = "<group>"; };
 		6B1C5C2F16BFF66A0041561F /* InputSetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSetters.h; sourceTree = "<group>"; };
+		6B1C5C3016C0004A0041561F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6B1C5C3216C0004C0041561F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		6B1C5BEB16BFF0CC0041561F = {
 			isa = PBXGroup;
 			children = (
+				6B1C5C3216C0004C0041561F /* Icon@2x.png */,
+				6B1C5C3016C0004A0041561F /* Icon.png */,
 				6B1C5C1A16BFF3470041561F /* Setters */,
 				6B1C5BFD16BFF0CC0041561F /* InputSettersExample */,
 				6B1C5BF616BFF0CC0041561F /* Frameworks */,
@@ -208,6 +214,8 @@
 				6B1C5C0E16BFF0CC0041561F /* Default-568h@2x.png in Resources */,
 				6B1C5C1116BFF0CC0041561F /* MainStoryboard.storyboard in Resources */,
 				6B1C5C2A16BFF3470041561F /* InputSetters.storyboard in Resources */,
+				6B1C5C3116C0004A0041561F /* Icon.png in Resources */,
+				6B1C5C3316C0004C0041561F /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
