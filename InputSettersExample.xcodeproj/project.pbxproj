@@ -18,6 +18,13 @@
 		6B1C5C0E16BFF0CC0041561F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C5C0D16BFF0CC0041561F /* Default-568h@2x.png */; };
 		6B1C5C1116BFF0CC0041561F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C5C0F16BFF0CC0041561F /* MainStoryboard.storyboard */; };
 		6B1C5C1416BFF0CC0041561F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C1316BFF0CC0041561F /* ViewController.m */; };
+		6B1C5C2816BFF3470041561F /* DateCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C1C16BFF3470041561F /* DateCollectionViewController.m */; };
+		6B1C5C2916BFF3470041561F /* DateSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C1E16BFF3470041561F /* DateSelectionViewController.m */; };
+		6B1C5C2A16BFF3470041561F /* InputSetters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C5C1F16BFF3470041561F /* InputSetters.storyboard */; };
+		6B1C5C2B16BFF3470041561F /* MultiChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C2116BFF3470041561F /* MultiChoiceViewController.m */; };
+		6B1C5C2C16BFF3470041561F /* MultiColumnChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C2316BFF3470041561F /* MultiColumnChoiceViewController.m */; };
+		6B1C5C2D16BFF3470041561F /* MultiSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C2516BFF3470041561F /* MultiSelectionViewController.m */; };
+		6B1C5C2E16BFF3470041561F /* TextEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C5C2716BFF3470041561F /* TextEditorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,20 @@
 		6B1C5C1016BFF0CC0041561F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6B1C5C1216BFF0CC0041561F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6B1C5C1316BFF0CC0041561F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B1C5C1B16BFF3470041561F /* DateCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCollectionViewController.h; sourceTree = "<group>"; };
+		6B1C5C1C16BFF3470041561F /* DateCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCollectionViewController.m; sourceTree = "<group>"; };
+		6B1C5C1D16BFF3470041561F /* DateSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateSelectionViewController.h; sourceTree = "<group>"; };
+		6B1C5C1E16BFF3470041561F /* DateSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateSelectionViewController.m; sourceTree = "<group>"; };
+		6B1C5C1F16BFF3470041561F /* InputSetters.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputSetters.storyboard; sourceTree = "<group>"; };
+		6B1C5C2016BFF3470041561F /* MultiChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiChoiceViewController.h; sourceTree = "<group>"; };
+		6B1C5C2116BFF3470041561F /* MultiChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiChoiceViewController.m; sourceTree = "<group>"; };
+		6B1C5C2216BFF3470041561F /* MultiColumnChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiColumnChoiceViewController.h; sourceTree = "<group>"; };
+		6B1C5C2316BFF3470041561F /* MultiColumnChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiColumnChoiceViewController.m; sourceTree = "<group>"; };
+		6B1C5C2416BFF3470041561F /* MultiSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSelectionViewController.h; sourceTree = "<group>"; };
+		6B1C5C2516BFF3470041561F /* MultiSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSelectionViewController.m; sourceTree = "<group>"; };
+		6B1C5C2616BFF3470041561F /* TextEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditorViewController.h; sourceTree = "<group>"; };
+		6B1C5C2716BFF3470041561F /* TextEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditorViewController.m; sourceTree = "<group>"; };
+		6B1C5C2F16BFF66A0041561F /* InputSetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSetters.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 		6B1C5BEB16BFF0CC0041561F = {
 			isa = PBXGroup;
 			children = (
+				6B1C5C1A16BFF3470041561F /* Setters */,
 				6B1C5BFD16BFF0CC0041561F /* InputSettersExample */,
 				6B1C5BF616BFF0CC0041561F /* Frameworks */,
 				6B1C5BF516BFF0CC0041561F /* Products */,
@@ -85,9 +107,9 @@
 			children = (
 				6B1C5C0616BFF0CC0041561F /* AppDelegate.h */,
 				6B1C5C0716BFF0CC0041561F /* AppDelegate.m */,
-				6B1C5C0F16BFF0CC0041561F /* MainStoryboard.storyboard */,
 				6B1C5C1216BFF0CC0041561F /* ViewController.h */,
 				6B1C5C1316BFF0CC0041561F /* ViewController.m */,
+				6B1C5C0F16BFF0CC0041561F /* MainStoryboard.storyboard */,
 				6B1C5BFE16BFF0CC0041561F /* Supporting Files */,
 			);
 			name = InputSettersExample;
@@ -106,6 +128,27 @@
 				6B1C5C0D16BFF0CC0041561F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B1C5C1A16BFF3470041561F /* Setters */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C5C1B16BFF3470041561F /* DateCollectionViewController.h */,
+				6B1C5C1C16BFF3470041561F /* DateCollectionViewController.m */,
+				6B1C5C1D16BFF3470041561F /* DateSelectionViewController.h */,
+				6B1C5C1E16BFF3470041561F /* DateSelectionViewController.m */,
+				6B1C5C2016BFF3470041561F /* MultiChoiceViewController.h */,
+				6B1C5C2116BFF3470041561F /* MultiChoiceViewController.m */,
+				6B1C5C2216BFF3470041561F /* MultiColumnChoiceViewController.h */,
+				6B1C5C2316BFF3470041561F /* MultiColumnChoiceViewController.m */,
+				6B1C5C2416BFF3470041561F /* MultiSelectionViewController.h */,
+				6B1C5C2516BFF3470041561F /* MultiSelectionViewController.m */,
+				6B1C5C2616BFF3470041561F /* TextEditorViewController.h */,
+				6B1C5C2716BFF3470041561F /* TextEditorViewController.m */,
+				6B1C5C1F16BFF3470041561F /* InputSetters.storyboard */,
+				6B1C5C2F16BFF66A0041561F /* InputSetters.h */,
+			);
+			path = Setters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +207,7 @@
 				6B1C5C0C16BFF0CC0041561F /* Default@2x.png in Resources */,
 				6B1C5C0E16BFF0CC0041561F /* Default-568h@2x.png in Resources */,
 				6B1C5C1116BFF0CC0041561F /* MainStoryboard.storyboard in Resources */,
+				6B1C5C2A16BFF3470041561F /* InputSetters.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +221,12 @@
 				6B1C5C0416BFF0CC0041561F /* main.m in Sources */,
 				6B1C5C0816BFF0CC0041561F /* AppDelegate.m in Sources */,
 				6B1C5C1416BFF0CC0041561F /* ViewController.m in Sources */,
+				6B1C5C2816BFF3470041561F /* DateCollectionViewController.m in Sources */,
+				6B1C5C2916BFF3470041561F /* DateSelectionViewController.m in Sources */,
+				6B1C5C2B16BFF3470041561F /* MultiChoiceViewController.m in Sources */,
+				6B1C5C2C16BFF3470041561F /* MultiColumnChoiceViewController.m in Sources */,
+				6B1C5C2D16BFF3470041561F /* MultiSelectionViewController.m in Sources */,
+				6B1C5C2E16BFF3470041561F /* TextEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +277,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -251,7 +301,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

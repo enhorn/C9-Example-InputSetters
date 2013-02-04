@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Multi Choice View Controller-->
+        <scene sceneID="3f0-U0-e0b">
+            <objects>
+                <viewController storyboardIdentifier="MultiChoiceViewController" id="pfr-1C-YY8" customClass="MultiChoiceViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" alpha="0.5" contentMode="scaleToFill" id="TZS-f2-4m3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="xkp-Ut-N9h">
+                                <rect key="frame" x="0.0" y="288" width="320" height="260"/>
+                                <subviews>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="VcV-ta-ln2">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem tag="4242" systemItem="cancel" id="Gwl-KU-zoN">
+                                                <connections>
+                                                    <action selector="pressedCancel:" destination="pfr-1C-YY8" id="0Qi-sM-OSL"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="WTH-LJ-N4d"/>
+                                            <barButtonItem systemItem="done" id="GX0-mO-0JB">
+                                                <connections>
+                                                    <action selector="pressedDone:" destination="pfr-1C-YY8" id="Hq0-9m-AHq"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <pickerView contentMode="scaleToFill" id="l0c-Ip-4jz">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="pfr-1C-YY8" id="QTL-50-LFg"/>
+                                            <outlet property="delegate" destination="pfr-1C-YY8" id="ica-uY-Ox4"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Gwl-KU-zoN" id="L4m-U7-Lfg"/>
+                        <outlet property="doneButton" destination="GX0-mO-0JB" id="DVP-nm-ztc"/>
+                        <outlet property="picker" destination="l0c-Ip-4jz" id="QiV-co-T2G"/>
+                        <outlet property="toolbar" destination="VcV-ta-ln2" id="3WQ-wa-57M"/>
+                        <outlet property="toolsHolder" destination="xkp-Ut-N9h" id="yO3-JL-mWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r03-M8-6g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="-800"/>
+        </scene>
+        <!--Text Editor View Controller-->
+        <scene sceneID="zPY-EF-W75">
+            <objects>
+                <viewController storyboardIdentifier="TextEditorViewController" id="R5e-eo-ti8" customClass="TextEditorViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" alpha="0.5" contentMode="scaleToFill" id="ykO-Qg-v5J">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="201-zS-MyM">
+                                <rect key="frame" x="10" y="10" width="300" height="268"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" enabled="NO" id="ktW-3t-Gal">
+                                        <rect key="frame" x="20" y="94" width="260" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Vjq-4z-V7E">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="268"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="R5e-eo-ti8" id="lxv-LR-Hr3"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="dHJ-Vl-Q8T">
+                                <rect key="frame" x="0.0" y="288" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="fNt-xU-CXC">
+                                        <connections>
+                                            <action selector="pressedCancel:" destination="R5e-eo-ti8" id="VPx-KM-aQA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oVb-q2-vlM"/>
+                                    <barButtonItem systemItem="done" id="m1k-M8-dCY">
+                                        <connections>
+                                            <action selector="pressedDone:" destination="R5e-eo-ti8" id="inV-Ud-vO9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundLabel" destination="ktW-3t-Gal" id="dEJ-cc-XMc"/>
+                        <outlet property="cancelButton" destination="fNt-xU-CXC" id="hue-5e-DeN"/>
+                        <outlet property="doneButton" destination="m1k-M8-dCY" id="2qk-LU-Fyu"/>
+                        <outlet property="textBackgroundView" destination="201-zS-MyM" id="nmh-BQ-9iP"/>
+                        <outlet property="textview" destination="Vjq-4z-V7E" id="gpi-mk-ytM"/>
+                        <outlet property="toolbar" destination="dHJ-Vl-Q8T" id="KwA-Rc-ZaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tx9-jt-cqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="-800"/>
+        </scene>
+        <!--Date Selection View Controller-->
+        <scene sceneID="G8B-kw-hVi">
+            <objects>
+                <viewController storyboardIdentifier="DateSelectionViewController" id="Pz7-LS-RRc" customClass="DateSelectionViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" alpha="0.5" contentMode="scaleToFill" id="4pI-Br-17F">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="J10-1i-mXL">
+                                <rect key="frame" x="0.0" y="288" width="320" height="260"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="yC7-9z-Fak">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="377105720.12991899">
+                                            <!--2012-12-13 15:35:20 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="sv_SE"/>
+                                        <timeZone key="timeZone" name="America/Los_Angeles">
+                                            <data key="data">
+VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
+y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
+5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
+8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
+AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
+DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
+HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
+KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
+OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
+Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
+VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
+Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
+cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
+f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
+</data>
+                                        </timeZone>
+                                    </datePicker>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="pn3-he-1Ig">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem tag="4242" systemItem="cancel" id="7Gv-9V-sON">
+                                                <connections>
+                                                    <action selector="pressedCancel:" destination="Pz7-LS-RRc" id="TVE-oa-mUC"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="315-HW-vgg"/>
+                                            <barButtonItem systemItem="done" id="pxu-km-DFF">
+                                                <connections>
+                                                    <action selector="pressedDone:" destination="Pz7-LS-RRc" id="hfD-GP-x8t"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="7Gv-9V-sON" id="KKQ-Xe-fHv"/>
+                        <outlet property="doneButton" destination="pxu-km-DFF" id="nHW-mV-YXB"/>
+                        <outlet property="picker" destination="yC7-9z-Fak" id="F7e-kh-s0Y"/>
+                        <outlet property="toolbar" destination="pn3-he-1Ig" id="oVN-Gh-iqv"/>
+                        <outlet property="toolsHolder" destination="J10-1i-mXL" id="gaC-OP-zFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LA3-mu-MjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-800"/>
+        </scene>
+        <!--Multi Selection View Controller-->
+        <scene sceneID="Z6H-Tg-rxT">
+            <objects>
+                <viewController storyboardIdentifier="MultiSelectionViewController" id="PO0-ic-R1Q" customClass="MultiSelectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gmd-FG-aEx">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="mqT-Oi-RRb">
+                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Identifier" textLabel="BmI-6x-Itw" detailTextLabel="Mw6-xO-7yx" style="IBUITableViewCellStyleSubtitle" id="KBI-xH-CkQ">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BmI-6x-Itw">
+                                                    <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mw6-xO-7yx">
+                                                    <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PO0-ic-R1Q" id="0T6-8a-Zfb"/>
+                                    <outlet property="delegate" destination="PO0-ic-R1Q" id="8MW-L4-v5m"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" id="Svp-hO-odD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="cg5-pT-EdW">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0TU-NS-wFG">
+                                            <connections>
+                                                <action selector="pressedCancel:" destination="PO0-ic-R1Q" id="Qp2-dB-ZSP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gbl-LD-ycS">
+                                            <connections>
+                                                <action selector="pressedDone:" destination="PO0-ic-R1Q" id="Qef-Yf-Ibi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.85883325730000004" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="0TU-NS-wFG" id="yRl-i5-0VV"/>
+                        <outlet property="doneButton" destination="gbl-LD-ycS" id="ZTw-Cr-34b"/>
+                        <outlet property="navBar" destination="Svp-hO-odD" id="8D4-Op-Lbr"/>
+                        <outlet property="navItem" destination="cg5-pT-EdW" id="0O2-dM-mfu"/>
+                        <outlet property="table" destination="mqT-Oi-RRb" id="5Aa-yi-jU2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgU-oX-hWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-147"/>
+        </scene>
+        <!--Date Collection View Controller-->
+        <scene sceneID="6RW-cY-xcg">
+            <objects>
+                <viewController storyboardIdentifier="DateCollectionViewController" id="Wym-l6-dXN" customClass="DateCollectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yLx-Tg-4Ng">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6GA-R4-ToH">
+                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ACell" textLabel="W5o-Bv-fSM" style="IBUITableViewCellStyleDefault" id="ncp-84-a75">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W5o-Bv-fSM">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wym-l6-dXN" id="KoG-uz-2A6"/>
+                                    <outlet property="delegate" destination="Wym-l6-dXN" id="L5l-nh-pk0"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" id="7z1-FW-MW1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="EnK-IH-159">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="K5G-cz-LHc">
+                                            <connections>
+                                                <action selector="pressedDone:" destination="Wym-l6-dXN" id="5Ea-Jj-YgZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bo5-lP-TUp">
+                                            <connections>
+                                                <action selector="pressedAdd:" destination="Wym-l6-dXN" id="2GK-H5-qUa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.85883325730000004" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="Bo5-lP-TUp" id="RLt-HO-UxC"/>
+                        <outlet property="doneButton" destination="K5G-cz-LHc" id="f1g-bc-lWm"/>
+                        <outlet property="navBar" destination="7z1-FW-MW1" id="twm-Xm-vcR"/>
+                        <outlet property="navItem" destination="EnK-IH-159" id="1qu-Lr-UL3"/>
+                        <outlet property="table" destination="6GA-R4-ToH" id="b8W-N2-3D5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQl-0G-0r5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="-147"/>
+        </scene>
+        <!--Multi Column Choice View Controller-->
+        <scene sceneID="rFV-XW-Yr5">
+            <objects>
+                <viewController storyboardIdentifier="MultiColumnChoiceViewController" id="jsi-27-Dzd" customClass="MultiColumnChoiceViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" alpha="0.5" contentMode="scaleToFill" id="TqH-hI-im5">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="ttf-FQ-dpL">
+                                <rect key="frame" x="0.0" y="288" width="320" height="260"/>
+                                <subviews>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="IV7-DC-goR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem tag="4242" systemItem="cancel" id="SwE-rn-hOA">
+                                                <connections>
+                                                    <action selector="pressedCancel:" destination="jsi-27-Dzd" id="AyU-gd-2rG"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="I1R-HH-cac"/>
+                                            <barButtonItem systemItem="done" id="tze-5O-yKS">
+                                                <connections>
+                                                    <action selector="pressedDone:" destination="jsi-27-Dzd" id="7Mf-S7-dWv"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <pickerView contentMode="scaleToFill" id="uhL-5h-ZKB">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="jsi-27-Dzd" id="Fzy-Xm-5mQ"/>
+                                            <outlet property="delegate" destination="jsi-27-Dzd" id="Vrx-f3-GTh"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="SwE-rn-hOA" id="wDf-h3-IWb"/>
+                        <outlet property="doneButton" destination="tze-5O-yKS" id="cu5-bl-QbH"/>
+                        <outlet property="picker" destination="uhL-5h-ZKB" id="Y4T-3g-7SL"/>
+                        <outlet property="toolbar" destination="IV7-DC-goR" id="4pV-xk-a9A"/>
+                        <outlet property="toolsHolder" destination="ttf-FQ-dpL" id="YzI-sz-Hgv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpX-mw-Hsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-800"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="DateCollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DateCollectionViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="navItem" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="DateSelectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DateSelectionViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="picker" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="toolsHolder" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MultiChoiceViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MultiChoiceViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="picker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="toolsHolder" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MultiColumnChoiceViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MultiColumnChoiceViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="picker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="toolsHolder" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MultiSelectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MultiSelectionViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="navItem" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="TextEditorViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextEditorViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="textBackgroundView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="textview" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
