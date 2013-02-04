@@ -21,14 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B1C5BF416BFF0CC0041561F /* InputSetters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputSetters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1C5BF416BFF0CC0041561F /* InputSettersExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputSettersExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1C5BF716BFF0CC0041561F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6B1C5BF916BFF0CC0041561F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B1C5BFB16BFF0CC0041561F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6B1C5BFF16BFF0CC0041561F /* InputSetters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InputSetters-Info.plist"; sourceTree = "<group>"; };
+		6B1C5BFF16BFF0CC0041561F /* InputSettersExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InputSettersExample-Info.plist"; sourceTree = "<group>"; };
 		6B1C5C0116BFF0CC0041561F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B1C5C0316BFF0CC0041561F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6B1C5C0516BFF0CC0041561F /* InputSetters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InputSetters-Prefix.pch"; sourceTree = "<group>"; };
+		6B1C5C0516BFF0CC0041561F /* InputSettersExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InputSettersExample-Prefix.pch"; sourceTree = "<group>"; };
 		6B1C5C0616BFF0CC0041561F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B1C5C0716BFF0CC0041561F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6B1C5C0916BFF0CC0041561F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		6B1C5BEB16BFF0CC0041561F = {
 			isa = PBXGroup;
 			children = (
-				6B1C5BFD16BFF0CC0041561F /* InputSetters */,
+				6B1C5BFD16BFF0CC0041561F /* InputSettersExample */,
 				6B1C5BF616BFF0CC0041561F /* Frameworks */,
 				6B1C5BF516BFF0CC0041561F /* Products */,
 			);
@@ -65,7 +65,7 @@
 		6B1C5BF516BFF0CC0041561F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B1C5BF416BFF0CC0041561F /* InputSetters.app */,
+				6B1C5BF416BFF0CC0041561F /* InputSettersExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6B1C5BFD16BFF0CC0041561F /* InputSetters */ = {
+		6B1C5BFD16BFF0CC0041561F /* InputSettersExample */ = {
 			isa = PBXGroup;
 			children = (
 				6B1C5C0616BFF0CC0041561F /* AppDelegate.h */,
@@ -90,16 +90,17 @@
 				6B1C5C1316BFF0CC0041561F /* ViewController.m */,
 				6B1C5BFE16BFF0CC0041561F /* Supporting Files */,
 			);
+			name = InputSettersExample;
 			path = InputSetters;
 			sourceTree = "<group>";
 		};
 		6B1C5BFE16BFF0CC0041561F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6B1C5BFF16BFF0CC0041561F /* InputSetters-Info.plist */,
+				6B1C5BFF16BFF0CC0041561F /* InputSettersExample-Info.plist */,
 				6B1C5C0016BFF0CC0041561F /* InfoPlist.strings */,
 				6B1C5C0316BFF0CC0041561F /* main.m */,
-				6B1C5C0516BFF0CC0041561F /* InputSetters-Prefix.pch */,
+				6B1C5C0516BFF0CC0041561F /* InputSettersExample-Prefix.pch */,
 				6B1C5C0916BFF0CC0041561F /* Default.png */,
 				6B1C5C0B16BFF0CC0041561F /* Default@2x.png */,
 				6B1C5C0D16BFF0CC0041561F /* Default-568h@2x.png */,
@@ -110,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6B1C5BF316BFF0CC0041561F /* InputSetters */ = {
+		6B1C5BF316BFF0CC0041561F /* InputSettersExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B1C5C1716BFF0CC0041561F /* Build configuration list for PBXNativeTarget "InputSetters" */;
+			buildConfigurationList = 6B1C5C1716BFF0CC0041561F /* Build configuration list for PBXNativeTarget "InputSettersExample" */;
 			buildPhases = (
 				6B1C5BF016BFF0CC0041561F /* Sources */,
 				6B1C5BF116BFF0CC0041561F /* Frameworks */,
@@ -122,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = InputSetters;
+			name = InputSettersExample;
 			productName = InputSetters;
-			productReference = 6B1C5BF416BFF0CC0041561F /* InputSetters.app */;
+			productReference = 6B1C5BF416BFF0CC0041561F /* InputSettersExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +137,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Robin Enhorn";
 			};
-			buildConfigurationList = 6B1C5BEF16BFF0CC0041561F /* Build configuration list for PBXProject "InputSetters" */;
+			buildConfigurationList = 6B1C5BEF16BFF0CC0041561F /* Build configuration list for PBXProject "InputSettersExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B1C5BF316BFF0CC0041561F /* InputSetters */,
+				6B1C5BF316BFF0CC0041561F /* InputSettersExample */,
 			);
 		};
 /* End PBXProject section */
@@ -261,9 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InputSetters/InputSetters-Prefix.pch";
-				INFOPLIST_FILE = "InputSetters/InputSetters-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "InputSetters/InputSettersExample-Prefix.pch";
+				INFOPLIST_FILE = "InputSetters/InputSettersExample-Info.plist";
+				PRODUCT_NAME = InputSettersExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,9 +273,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InputSetters/InputSetters-Prefix.pch";
-				INFOPLIST_FILE = "InputSetters/InputSetters-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "InputSetters/InputSettersExample-Prefix.pch";
+				INFOPLIST_FILE = "InputSetters/InputSettersExample-Info.plist";
+				PRODUCT_NAME = InputSettersExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -282,7 +283,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6B1C5BEF16BFF0CC0041561F /* Build configuration list for PBXProject "InputSetters" */ = {
+		6B1C5BEF16BFF0CC0041561F /* Build configuration list for PBXProject "InputSettersExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B1C5C1516BFF0CC0041561F /* Debug */,
@@ -291,13 +292,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B1C5C1716BFF0CC0041561F /* Build configuration list for PBXNativeTarget "InputSetters" */ = {
+		6B1C5C1716BFF0CC0041561F /* Build configuration list for PBXNativeTarget "InputSettersExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B1C5C1816BFF0CC0041561F /* Debug */,
 				6B1C5C1916BFF0CC0041561F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
