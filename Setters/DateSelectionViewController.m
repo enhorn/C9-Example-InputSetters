@@ -61,6 +61,9 @@ static DateSelectionViewController *shared;
 	}
 
 	[self addCancelView];
+	self.picker.datePickerMode = self.pickerMode;
+	[self.picker reloadInputViews];
+	[self.picker setNeedsDisplay];
 }
 
 - (void) addCancelView {
@@ -88,13 +91,18 @@ static DateSelectionViewController *shared;
 	if (self.defaultDate) {
 		[self.picker setDate:self.defaultDate];
 	}
+	[self.picker reloadInputViews];
+	[self.picker setNeedsDisplay];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
 	self.picker.datePickerMode = self.pickerMode;
 	if (self.defaultDate) {
 		[self.picker setDate:self.defaultDate];
 	}
+	[self.picker reloadInputViews];
+	[self.picker setNeedsDisplay];
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -111,6 +119,7 @@ static DateSelectionViewController *shared;
 		[self.picker setDate:self.defaultDate];
 	}
 	[self addAndAnimateViews:aView];
+	[self.picker reloadInputViews];
 }
 
 - (void) addAndAnimateViews:(UIView*)aView {

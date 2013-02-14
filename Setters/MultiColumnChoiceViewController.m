@@ -85,6 +85,7 @@ static MultiColumnChoiceViewController *shared;
 }
 
 - (void) viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
 	[self.picker reloadAllComponents];
 }
 

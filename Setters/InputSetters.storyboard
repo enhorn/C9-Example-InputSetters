@@ -444,8 +444,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="MultiSelectionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MultiSelectionViewController.h"/>
             <relationships>
-                <relationship kind="action" name="pressedCancel:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="pressedDone:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>

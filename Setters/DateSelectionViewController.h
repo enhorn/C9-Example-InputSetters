@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "InputSetters.h"
 
 typedef void (^DateChangeBlock)(NSDate *changeDate);
 typedef void (^DateDoneBlock)(NSDate *chosenDate);

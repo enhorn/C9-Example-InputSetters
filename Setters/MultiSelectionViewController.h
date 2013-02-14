@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "InputSetters.h"
+
+#ifndef PresentatonType
+typedef enum {
+	PresentatonTypeModal = 0,
+	PresentatonTypePush = 1
+} PresentatonType;
+#endif
 
 @protocol MultiSelectable <NSObject>
 @required

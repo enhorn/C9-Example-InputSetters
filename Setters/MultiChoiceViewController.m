@@ -87,7 +87,12 @@ static MultiChoiceViewController *shared;
 	[super viewDidUnload];
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+}
+
 - (void) viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
 	[self.picker reloadAllComponents];
 	UITextView *textView = [self previewTextView];
 	if (textView) {
@@ -133,6 +138,12 @@ static MultiChoiceViewController *shared;
 	[aView addSubview:self.view];
 	
 	self.toolsHolder.frame = CGRectMake(0.0f, self.view.frame.size.height, self.toolsHolder.frame.size.width, self.toolsHolder.frame.size.height);
+
+	UITextView *textView = [self previewTextView];
+	if (textView) {
+		textView.alpha = 0.0f;
+		textView.hidden = !self.showFullPreview;
+	}
 	
 	[UIView animateWithDuration:0.25 animations:^(){
 		self.view.alpha = 1.0;
@@ -160,15 +171,18 @@ static MultiChoiceViewController *shared;
 			textView = [[UITextView alloc] initWithFrame:CGRectMake(0.0f, self.toolsHolder.frame.origin.y, 320.0f, 200.0f)];
 			textView.textColor = [UIColor whiteColor];
 			textView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
-			textView.font = [UIFont systemFontOfSize:22];
+			textView.font = [UIFont systemFontOfSize:21.9f];
 			textView.editable = NO;
+			textView.userInteractionEnabled = NO;
 			textView.tag = 4242;
 			textView.alpha = 0.0f;
 			textView.textAlignment = UITextAlignmentCenter;
 			[self.view addSubview:textView];
 		}
+		textView.text = @"";
 	} else {
 		if (textView) {
+			textView.text = @"";
 			textView.hidden = YES;
 		}
 	}
@@ -215,7 +229,7 @@ static MultiChoiceViewController *shared;
 		UITextView *textView = [self previewTextView];
 		if (textView) {
 			textView.text = [self.options objectAtIndex:row];
-			CGSize newSize = [textView.text sizeWithFont:[UIFont systemFontOfSize:22] constrainedToSize:CGSizeMake(320.0f, 200.0f) lineBreakMode:NSLineBreakByWordWrapping];
+			CGSize newSize = [textView.text sizeWithFont:[UIFont systemFontOfSize:22.5f] constrainedToSize:CGSizeMake(320.0f, 200.0f) lineBreakMode:NSLineBreakByWordWrapping];
 			CGFloat newHeight = newSize.height + 15.0f;
 			CGRect newFrame = CGRectMake(0.0f, self.toolsHolder.frame.origin.y-newHeight, 320.0f, newHeight);;
 			if (textView.alpha == 0.0f) {
