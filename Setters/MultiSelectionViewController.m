@@ -7,6 +7,7 @@
 //
 
 #import "MultiSelectionViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MultiSelectionViewController ()
 @property (nonatomic, retain) NSArray *options;
@@ -35,6 +36,7 @@ static MultiSelectionViewController *shared;
 	shared.cancelBlock = nil;
 	shared.doneBlock = nil;
 	shared.ownerViewController = nil;
+	shared.emptyListMessage = nil;
 	return shared;
 }
 
@@ -95,6 +97,7 @@ static MultiSelectionViewController *shared;
 	self.navItem.title = [NSString stringWithFormat:@"%i / %i", self.selected.count, self.options.count];
 	[self.table reloadData];
 	[self setupGUI];
+	[self toggleEmptyMessage];
 	[super viewWillAppear:animated];
 }
 
@@ -115,6 +118,30 @@ static MultiSelectionViewController *shared;
 		self.navBar.hidden = NO;
 		self.table.frame = CGRectMake(0.0f, 44.0f, self.view.frame.size.width, self.view.frame.size.height);
 	}
+}
+
+- (void) toggleEmptyMessage {
+	BOOL hasMessage = !(self.emptyListMessage == nil || [self.emptyListMessage isEqualToString:@""]);
+	UIFont *font = [UIFont boldSystemFontOfSize:13.0f];
+	CGSize size = hasMessage ? [self.emptyListMessage sizeWithFont:font constrainedToSize:CGSizeMake(290.0f, self.table.frame.size.height) lineBreakMode:NSLineBreakByWordWrapping] : CGSizeMake(1.0f, 1.0f);
+	UILabel *messageLabel = (UILabel*) [self.view viewWithTag:373737];
+	if (!messageLabel) {
+		messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 0.0f, 290.0f, size.height+20.0f)];
+		messageLabel.tag = 373737;
+		messageLabel.font = font;
+		messageLabel.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5f];
+		messageLabel.textColor = [UIColor whiteColor];
+		messageLabel.textAlignment = UITextAlignmentCenter;
+		messageLabel.numberOfLines = 0;
+		messageLabel.layer.cornerRadius = 5.0f;
+		[self.view addSubview:messageLabel];
+	} else {
+		messageLabel.frame = CGRectMake(20.0f, 0.0f, 290.0f, size.height+20.0f);
+	}
+	messageLabel.center = self.table.center;
+	messageLabel.text = self.emptyListMessage;
+	messageLabel.hidden = !hasMessage;
+	NSLog(@"Lalala: %@", self.emptyListMessage);
 }
 
 /* -------------------------------------------------------------------------------------- */

@@ -27,6 +27,8 @@ typedef void (^SelectionCancelBlock)();
 
 @interface MultiSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, retain) NSString *emptyListMessage;
+
 + (MultiSelectionViewController*) sharedMultiSelector;
 
 - (void) setupWithOptions:(NSArray*)someOptions preSelectedOptions:(NSArray*)somePreselected presentationViewController:(UIViewController*)viewController presentationType:(PresentatonType)presentationType doneBlock:(SelectionDoneBlock)selectionDoneBlock cancelBlock:(SelectionCancelBlock)selectionCancelBlock;
