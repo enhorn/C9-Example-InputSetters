@@ -121,9 +121,9 @@
 			}
 		}];
 	} else if (indexPath.row == 7) {
-		[[MultiChoiceViewController sharedMultiChooser] setupForParentView:self.view options:@[@"Option 1", @"Option 2", @"Option 3"] selectedOption:currentDetailText changeCallback:^(NSString *selected) {
+		[[MultiChoiceViewController sharedMultiChooser] setupForParentView:self.view options:@[@"Option 1", @"Option 2", @"Option 3"] selectedOption:currentDetailText changeCallback:^(NSString *selected, NSInteger index) {
 			cell.detailTextLabel.text = selected;
-		} doneCallback:^(NSString *selected) {
+		} doneCallback:^(NSString *selected, NSInteger index) {
 			if (selected) {
 				cell.detailTextLabel.text = selected;
 			} else {

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^ChoiceChangeBlock)(NSString *selected);
-typedef void (^ChoiceDoneBlock)(NSString *selected);
+typedef void (^ChoiceChangeBlock)(NSString *selected, NSInteger index);
+typedef void (^ChoiceDoneBlock)(NSString *selected, NSInteger index);
 
 @interface MultiChoiceViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 

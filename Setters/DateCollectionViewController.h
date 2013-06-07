@@ -7,17 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef enum {
-	DateCollectionTypeDate = 0,
-	DateCollectionTypeTime = 1,
-	DateCollectionTypeDateTime = 2
-} DateCollectionType;
-
-typedef enum {
-	CollectionPresentatonTypeModal = 0,
-	CollectionPresentatonTypePush = 1
-} CollectionPresentatonType;
+#import "InputSetters.h"
 
 typedef void (^CollectionDoneBlock)(NSArray *dates);
 

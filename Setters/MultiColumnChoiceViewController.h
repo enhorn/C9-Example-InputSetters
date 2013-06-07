@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#ifndef PresentatonType
-typedef enum {
-	PresentatonTypeModal = 0,
-	PresentatonTypePush = 1
-} PresentatonType;
-#endif
+#import "InputSetters.h"
 
 typedef void (^MultiChoiceChangeBlock)(NSArray *selected);
 typedef void (^MultiChoiceDoneBlock)(NSArray *selected);

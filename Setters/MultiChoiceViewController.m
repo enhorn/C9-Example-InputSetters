@@ -176,7 +176,7 @@ static MultiChoiceViewController *shared;
 			textView.userInteractionEnabled = NO;
 			textView.tag = 4242;
 			textView.alpha = 0.0f;
-			textView.textAlignment = UITextAlignmentCenter;
+			textView.textAlignment = NSTextAlignmentCenter;
 			[self.view addSubview:textView];
 		}
 		textView.text = @"";
@@ -193,14 +193,14 @@ static MultiChoiceViewController *shared;
 
 - (IBAction)pressedCancel:(id)sender {
 	if (self.doneBlock) {
-		self.doneBlock(nil);
+		self.doneBlock(nil, -1);
 	}
 	[self hideAndRemove];
 }
 
 - (IBAction)pressedDone:(id)sender {
 	if (self.doneBlock) {
-		self.doneBlock([self.options objectAtIndex:[self.picker selectedRowInComponent:0]]);
+		self.doneBlock([self.options objectAtIndex:[self.picker selectedRowInComponent:0]], [self.picker selectedRowInComponent:0]);
 	}
 	[self hideAndRemove];
 }
@@ -222,7 +222,7 @@ static MultiChoiceViewController *shared;
 
 - (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 	if (self.changeBlock) {
-		self.changeBlock([self.options objectAtIndex:row]);
+		self.changeBlock([self.options objectAtIndex:row], row);
 	}
 	[self assertFullPreview];
 	if (self.showFullPreview) {
